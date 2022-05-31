@@ -15,8 +15,8 @@
         <h1>MAIL GENERATOR</h1>
         <div id="root" class="container">
             <div>
-                <ul>
-                    <li v-for="index in 10" :key="index">{{contacts[index]}}</li>
+                <ul v-if="contacts.length == 10">
+                    <li v-for="contact in contacts">{{contact}}</li>
                 </ul>
             </div>
         </div>
